@@ -1,0 +1,382 @@
+body {
+  font-family: "Rubik", "Arial", sans-serif ;
+  font-size: 16px;
+  color: #ffffff;
+  background-color: #000000;
+}
+
+*, *::after, *::before {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+.header {
+  width: 1920px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 370px;
+}
+
+.logo {
+  margin-top: 20px;
+}
+
+.main-content {
+  width: 1920px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.navigation ul {
+  display: flex;
+  justify-content: space-between;
+  min-width: 440px;
+  margin-top: 25px;
+  padding: 0;
+  list-style: none;
+  line-height: 20px;
+}
+
+.about-jack-barboza {
+  position: relative;
+  min-height: 880px;
+  background: url(../img/jack.jpg) no-repeat 73% -120%;
+}
+
+.i-am {
+  width: 550px;
+  padding-top: 320px;
+  margin-left: 350px;
+  margin-bottom: 300px;
+  text-align: center;
+}
+
+.i-am h1 {
+  font-size: 60px;
+  font-weight: 500;
+  line-height: 65px;
+  letter-spacing: -1px;
+  word-spacing: -1px;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.i-am p {
+  padding: 15px;
+  line-height: 28px;
+}
+
+.button-download {
+  padding-left: 200px;
+  text-align: start;
+}
+
+.btn-download {
+  display: inline-block;
+  padding-left: 15px;
+  padding-right: 10px;
+  background-color: #ffffff;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 35px;
+  color: #000000;
+  text-decoration: none;
+}
+
+.btn-cv {
+  position: relative;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 38px;
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.btn-cv::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 3px;
+  left: 25px;
+  width: 15px;
+  height: 10px;
+  background: url("../img/arrow.png") no-repeat;
+}
+
+.social {
+  position: absolute;
+  right: 80px;
+  bottom: 330px;
+}
+
+.social ul {
+  list-style: none;
+}
+
+.social a {
+  display: block;
+  position: relative;
+  margin-bottom: 25px;
+  font: inherit;
+  font-size: 0;
+  line-height: 24px;
+  color: #ababab;
+  text-decoration: none;
+}
+
+.social a:hover {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.social a::before {
+  content: "";
+  display: block;
+  position: absolute;
+  right: 85px;
+  opacity: 0.5;
+}
+
+.social a:hover::before {
+  opacity: 1;
+}
+
+.facebook::before {
+  width: 25px;
+  height: 25px;
+  background: url("../img/facebook.svg") no-repeat;
+}
+
+.twitter::before {
+  width: 20px;
+  height: 20px;
+  background: url("../img/twitter.svg") no-repeat;
+}
+
+.dribble::before {
+  width: 18px;
+  height: 18px;
+  background: url("../img/dribble.svg") no-repeat;
+}
+
+.behance::before {
+  width: 27px;
+  height: 27px;
+  bottom: 5px;
+  background: url("../img/behance.svg") no-repeat;
+}
+
+.pinterest::before {
+  width: 20px;
+  height: 20px;
+  bottom: 7px;
+  background: url("../img/pinterest.svg") no-repeat;
+}
+
+.main-skills-section {
+  margin-top: 5px;
+  display: flex;
+  justify-content: center;
+}
+
+.main-skills {
+  list-style: none;
+  display: flex;
+  margin: 0 auto;
+  padding: 0;
+  position: relative;
+}
+
+.main-skills li {
+  width: 390px;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 3.7199999999999998px 0.28px rgba(101, 101, 101, 1);
+  padding: 55px;
+}
+
+.main-skills h3 {
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.main-skills p {
+  color: #585858;
+  line-height: 26px;
+}
+
+.main-skills a {
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 24px;
+  color: #000000;
+  text-decoration: none;
+}
+
+.main-skills::before {
+  content: "";
+  position: absolute;
+  left:auto;
+  margin-left: -550px;
+  margin-top: 130px;
+  background-color: #ffffff;
+  width: 2200px;
+  height: 513px;
+  z-index: -1;
+  transform: rotate(12.7deg);
+  overflow: hidden;
+}
+
+.main-skills::after {
+  content: "";
+  position: absolute;
+  left: -373px;
+  top: 120px;
+  width: 80px;
+  height: 185px;
+  background: url(../img/ellipse1.png) no-repeat;
+}
+
+.about-me {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 110px;
+  padding: 105px 340px 105px 300px;
+  background-color: #ffffff;
+  color: #585858;
+}
+
+.different {
+  width: 620px;
+  line-height: 26px;
+  margin-top: 90px;
+}
+
+.different h2 {
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 40px;
+  color: #000000;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.button-learn {
+  margin-top: 30px;
+}
+
+.btn-learn {
+  display: inline-block;
+  padding-left: 15px;
+  padding-right: 10px;
+  background-color: #000000;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 35px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.btn-more {
+  position: relative;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 38px;
+  color: #000000;
+  text-decoration: none;
+}
+
+.btn-more::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 3px;
+  left: 40px;
+  width: 15px;
+  height: 10px;
+  background: url("../img/arrow2.png") no-repeat;
+}
+
+.skills {
+  margin: 40px 60px;
+  z-index: 1;
+}
+
+.about-me::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 655px;
+  height: 645px;
+  margin-left: -612px;
+  margin-top: -60px;
+  background-color: #000000;
+}
+
+.different::after {
+  content: "";
+  display: block;
+  position: absolute;
+  margin-top: 50px;
+  margin-left: 200px;
+  width: 96px;
+  height: 96px;
+  background: url(../img/ellipse2.png) no-repeat;
+}
+
+.services {
+  background-color: #ffffff;
+  margin: 0;
+}
+
+.services h2 {
+  font-size: 30px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  color: #000000;
+  text-align: center;
+  margin: 0;
+  padding-top: 48px;
+}
+
+.services>p {
+  margin: 0 auto;
+  padding: 20px;
+  width: 480px;
+  letter-spacing: 1px;
+  line-height: 26px;
+  color: #262626;
+  text-align: center;
+}
+
+.services-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px 300px 160px 355px;
+}
+
+.services-list li {
+  display: block;
+  width: 370px;
+  margin: 15px;
+  padding: 30px 20px;
+  color: #656565;
+  text-align: center;
+  background: url("../img/monitor.png") no-repeat 50% 18%;
+  box-shadow: 0px 0px 9px 0px rgba(73, 73, 73, 0.4);
+}
+
+.services-list h4 {
+  color: #222222;
+  font-size: 18px;
+  font-weight: 500;
+  padding-top: 30px;
+}

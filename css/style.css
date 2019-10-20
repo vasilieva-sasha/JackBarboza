@@ -357,20 +357,23 @@ html {
 }
 
 .services-list {
+  position: relative;
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-  padding: 20px 300px 160px 355px;
+  padding: 20px 300px 140px 355px;
+  margin-bottom: 0;
 }
 
 .services-list li {
   display: block;
   width: 370px;
   margin: 15px;
-  padding: 30px 20px;
+  padding: 25px 20px 10px;
   color: #656565;
+  line-height: 25px;
   text-align: center;
-  background: url("../img/monitor.png") no-repeat 50% 18%;
+  background: url("../img/monitor.png") no-repeat 50% 15%;
   box-shadow: 0px 0px 9px 0px rgba(73, 73, 73, 0.4);
 }
 
@@ -380,3 +383,77 @@ html {
   font-weight: 500;
   padding-top: 30px;
 }
+
+.services-list li.web-design {
+  color: #dcdcdc;
+  background: #000000 url("../img/monitor2.png") no-repeat 50% 15%;
+}
+
+.services-list li.web-design h4 {
+  color: #ffffff;
+}
+
+.services-list::after {
+  content: "";
+  position: absolute;
+  top: -10px;
+  right: 95px;
+  display: block;
+  width: 100px;
+  height: 100px;
+  background: url("../img/triangle.png") no-repeat;
+}
+
+.portfolio {
+  text-align: center;
+  padding: 95px 350px;
+}
+
+.portfolio h2 {
+  font-size: 36px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  margin: 0;
+}
+
+.portfolio>p {
+  width: 450px;
+  font-family: "Poppins", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0.5px;
+  margin: 20px auto;
+}
+
+.sorting a {
+  display: inline-block;
+  margin: 40px 28px 20px;
+  vertical-align: middle;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 26px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.sorting a.current {
+  color: #ffa801;
+}
+
+.photos a {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 14px;
+}
+
+.pen::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 670px;
+  height: 295px;
+  outline: 3px solid #ffffff;
+  outline-offset: -15px;
+  background: rgba(0, 0, 0, 0.6) url("../img/binoculars.png") no-repeat 50% 50%;
+}
+
